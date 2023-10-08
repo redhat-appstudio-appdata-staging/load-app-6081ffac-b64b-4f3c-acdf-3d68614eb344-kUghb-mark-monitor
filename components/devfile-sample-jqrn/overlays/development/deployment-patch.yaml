@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-jqrn
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/test-rhtap-88-tenant/load-app-6081ffac-b64b-4f3c-acdf-3d68614eb344/devfile-sample-jqrn@sha256:1b8243701eec1443a80617ea7df905d1f87ffcfd875c514fdb0fec9ef1d49e88
+        name: my-nodejs
+        resources: {}
+status: {}
